@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+    <title>CvvMe</title>
+</head>
+
+<body>
+    <div class="navbar container">
+        <div class="head">
+            <h1 class="heading">
+                <a href="#">CVV.ME</a>
+            </h1>
+            <ul>
+                <li><a href=""><i class="fa fa-rss"></i>News</a></li>
+                <li><a href=""><i class="fa fa-money-bill-alt"></i>Billing</a></li>
+                <li><a href=""><i class="fa fa-credit-card"></i>CVV</a></li>
+                <li><a href=""><i class="fa fa-credit-card"></i>No CVV</a></li>
+                <li><a href=""><i class="fa fa-list-alt"></i>SSN</a></li>
+                <li><a href=""><i class="fa fa-credit-card"></i>Dumps</a></li>
+                <li><a href=""><i class="fa fa-shopping-cart"></i>Cart</a></li>
+                <li><a href=""><i class="fa fa-arrow-circle-down"></i>Orders</a></li>
+            </ul>
+        </div>
+
+        <div class="account">
+            <p class="chat"><i class="fa fa-comment"></i></p>
+            <p class="faq"><i class="fa fa-question-circle"></i></p>
+            <p class="dropdown"><i class="fa fa-user"></i>
+                <span class="username">
+                    UserNamehui7346
+                </span>
+                <span id="currency">$0.0</span><i class="fa fa-caret-down"></i>
+            </p>
+        </div>
+    </div>
+
+    <!-- bitcoin system -->
+    <!-- bitcoin litecoin tabs -->
+    <div class="tabs">
+        <ul>
+            <li class="trigger active" data-target="#bitcoin" id="bitbtn">Bitcoin</li>
+            <li class="trigger" data-target="#litecoin" id="litebtn">Litecoin</li>
+            <!-- <li class="trigger active" data-target="#bitcoin"></li> ADD MORE FOR FUTURE-->
+        </ul>
+        <div class="content active" id="bitcoin">
+            <div class="image">
+                <img src="./img/bitcoin.png" alt="A bitcoin image Showing Bitcoin icon and name">
+                <a href="#" class="btn" id="payment-create">Make Payment</a>
+            </div>
+
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Status</th>
+                    <th>Credited</th>
+                    <th>USD</th>
+                    <th>BTC</th>
+                    <th>Exchange Rate</th>
+                    <th>Fee</th>
+                    <th>Create Date</th>
+                    <th>Payment Date</th>
+                </tr>
+
+                <tr>
+                    <td>ID</td>
+                    <td>Status</td>
+                    <td>Credited</td>
+                    <td>USD</td>
+                    <td>BTC</td>
+                    <td>Exchange Rate</td>
+                    <td>Fee</td>
+                    <td>Create Date</td>
+                    <td>Payment Date</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="content hide" id="litecoin">
+            <div class="image">
+                <img src="./img/litecoin.png" alt="A Litecoin image Showing Litcoin icon and name">
+                <a href="#" class="btn" id="payment-create">Make Payment</a>
+            </div>
+
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Status</th>
+                    <th>Credited</th>
+                    <th>USD</th>
+                    <th>BTC</th>
+                    <th>Exchange Rate</th>
+                    <th>Fee</th>
+                    <th>Create Date</th>
+                    <th>Payment Date</th>
+                </tr>
+
+                <tr>
+                    <td>ID</td>
+                    <td>Status</td>
+                    <td>Credited</td>
+                    <td>USD</td>
+                    <td>BTC</td>
+                    <td>Exchange Rate</td>
+                    <td>Fee</td>
+                    <td>Create Date</td>
+                    <td>Payment Date</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="./tabs.js"></script>
+</body>
+
+</html>
