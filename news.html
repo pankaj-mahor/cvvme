@@ -13,35 +13,76 @@
 </head>
 
 <body>
-    <div class="navbar container">
-        <div class="head">
-            <h1 class="heading">
-                <a href="index.html">CVV.ME</a>
-            </h1>
-            <ul>
-                <li><a href="news.html"><i class="fa fa-rss"></i>News</a></li>
-                <li><a href=""><i class="fa fa-money-bill-alt"></i>Billing</a></li>
-                <li><a href=""><i class="fa fa-credit-card"></i>CVV</a></li>
-                <li><a href=""><i class="fa fa-credit-card"></i>No CVV</a></li>
-                <li><a href=""><i class="fa fa-list-alt"></i>SSN</a></li>
-                <li><a href=""><i class="fa fa-credit-card"></i>Dumps</a></li>
-                <li><a href=""><i class="fa fa-shopping-cart"></i>Cart</a></li>
-                <li><a href=""><i class="fa fa-arrow-circle-down"></i>Orders</a></li>
-            </ul>
-        </div>
+    <div class="nav">
+        <div class="navbar container">
+            <div class="head">
+                <h1 class="heading">
+                    <a href="#">CVV.ME</a>
+                </h1>
+                <ul>
+                    <li><a href=""><i class="fa fa-rss"></i>News</a></li>
+                    <li><a href=""><i class="fa fa-money-bill-alt"></i>Billing</a></li>
+                    <li><a href=""><i class="fa fa-credit-card"></i>CVV</a></li>
+                    <li><a href=""><i class="fa fa-credit-card"></i>No CVV</a></li>
+                    <li><a href=""><i class="fa fa-list-alt"></i>SSN</a></li>
+                    <li><a href=""><i class="fa fa-credit-card"></i>Dumps</a></li>
+                    <li><a href=""><i class="fa fa-shopping-cart"></i>Cart</a></li>
+                    <li><a href=""><i class="fa fa-arrow-circle-down"></i>Orders</a></li>
+                </ul>
+            </div>
 
-        <div class="account">
-            <p class="chat"><i class="fa fa-comment"></i></p>
-            <p class="faq"><i class="fa fa-question-circle"></i></p>
-            <p class="dropdown"><i class="fa fa-user"></i>
-                <span class="username">
-                    UserNamehui7346
-                </span>
-                <span id="currency">$0.0</span><i class="fa fa-caret-down"></i>
-            </p>
+            <div class="account">
+                <div class="chat">
+                    <i id="chat" class="fa fa-comment"></i>
+                    <div class="chatbox hide" id="chatbox">
+                        <div class="headchat">
+                            <h4><i></i>Talk with support</h4>
+                        </div>
+                        <div class="msg-box">
+                            <p id="message" class="message">hi there how are you?</p>
+                        </div>
+                        <div class="typemsg">
+                            <form action="">
+                                <input type="text" placeholder="type a message" id="msg" class="msg">
+
+                                <button type="submit">Send
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <p class="faq"><i class="fa fa-question-circle"></i></p>
+                <div class="dropdown" id="drop-select"><i class="fa fa-user"></i>
+                    <span class="username">
+                        UserNamehui7346
+                    </span>
+                    <span id="currency">$0.0</span><i class="fa fa-caret-down"></i>
+                    <div class="dropdown-box hide" id="drop-box">
+                        <div class="usericon">
+                            <img src="./img/usericon.png" alt="An user icon">
+                            <p>username</p>
+                        </div>
+                        <div class="mail-details">
+                            <p>Email: </p>
+                            <p>Jabber :</p>
+                        </div>
+                        <div class="setting">
+                            <button id="setting"><i class="fa fa-cogs"></i> Setting</button>
+                            <button><i class="fa fa-sign-out-alt"></i> Logout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
+    <div class="setting-popup hide" id="setting-popup">
+        <div class="popup">
+            <div class="popup-head">
+                <p>Setting</p>
+                <span id="close"><i class="fa fa-times"></i></span>
+            </div>
+        </div>
+    </div>
     <!-- News Area HOme page -->
     <div class="news">
         <div class="news-section">
