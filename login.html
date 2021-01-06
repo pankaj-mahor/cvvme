@@ -13,28 +13,50 @@
     <title>CvvMe</title>
 </head>
 <body>
-    <div class="login-box" id="login">
-        <div class="log-in">
-            <img src="./img/loginBird.png" alt="A bird flying" class="icon">
-            <h1>Please Login</h1>
-            <form id="loginkeybox">
-                <textarea name="loginkey" cols="37" rows="6" placeholder="login key"></textarea>
-                <div class="links">
-                    <button href="#" class="register">Registration</button>
+    <div class="flip-card login-box" id="login">
+        <div class="flip-card-inner" id="flip-card-inner">
+            <div class="flip-card-front log-in">
+                <img src="./img/loginBird.png" alt="A bird flying" class="icon">
+                <h1>Please Login</h1>
+                <form id="loginkeybox">
+                    <textarea name="loginkey" placeholder="login key"></textarea>
+                    <div class="links">
+                    <!-- <button href="#" class="register">Registration</button> -->
                     <input type="submit" value="Login" href="#" class="login" id="login1">
                 </div>
-            </form>
-            <form class="input-field hide" id="login-with-password">
-                <input type="text" class="input" id="username" placeholder="Username"><br>
-                <input type="password" class="input" id="password" placeholder="password">
-                <div class="links">
-                    <button href="#register" class="register">Registration</button>
-                    <input type="submit" value="Login" href="#" class="login" id="login2">
-                </div>
-            </form>
-            <a href="#" id="text" class="active">Want to use login and password?</a>
-            
+                </form>
+                <form class="input-field hide" id="login-with-password">
+                    <input type="text" class="input" id="username" placeholder="Username"><br>
+                    <input type="password" class="input" id="password" placeholder="password">
+                    <div class="links">
+                        <!-- <button href="#register" class="register">Registration</button> -->
+                        <input type="submit" value="Login" href="#" class="login" id="login2">
+                    </div>
+                </form>
+                <a href="#" id="text" class="active">Want to use login and password?</a>
+                <button href="#register" class="register" id="register">Registration</button>
+
+            </div>
+
+
+            <!-- back -->
+            <div class="flip-card-back log-in">
+                <img src="./img/loginBird.png" alt="A bird flying" class="icon">
+                <h1>Please register</h1>
+                <form class="input-field" id="register-with-password">
+                    <input type="text" class="input" id="username-r" placeholder="Username"><br>
+                    <input type="password" class="input" id="password-r" placeholder="password">
+                    <div class="links">
+                        <!-- <button href="#register" class="register">Registration</button> -->
+                        <input type="submit" value="Login" href="#" class="login" id="register">
+                    </div>
+                </form>
+
+                <button href="#" class="register" id="backtologin">Back to Login</button>
+
+            </div>
         </div>
+        
     </div>
 
 

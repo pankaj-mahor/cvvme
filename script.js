@@ -6,6 +6,20 @@ const chatbox = document.getElementById('chatbox');
 const dropselect = document.getElementById('drop-select');
 const dropbox = document.getElementById('drop-box');
 
+//setting box open 
+const settingpopup = document.getElementById('setting-popup');
+const settingbtn = document.getElementById('setting');
+const closebtn = document.getElementById('close');
+
+settingbtn.addEventListener('click' , function(){
+    settingpopup.classList.remove('hide');
+    settingpopup.classList.add('show');
+})
+
+closebtn.addEventListener('click', function(){
+    settingpopup.classList.remove('show');
+    settingpopup.classList.add('hide');
+})
 
 chaticon.addEventListener('click', function(e){
     console.log(e.target)

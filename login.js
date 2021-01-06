@@ -1,6 +1,10 @@
 const loginkey = document.getElementById('loginkeybox');
 const loginpassword = document.getElementById('login-with-password');
 const text = document.getElementById('text');
+const register = document.getElementById('register');
+const backtologin = document.getElementById('backtologin');
+
+const card = document.getElementById('flip-card-inner');
 
 text.addEventListener('click', function(){
     text.classList.toggle('change');
@@ -23,6 +27,13 @@ text.addEventListener('click', function(){
 
 
 
+register.addEventListener('click' , function(){
+    card.style.transform='rotateY(180deg)';
+})
+
+backtologin.addEventListener('click', function(){
+    card.style.transform = 'rotate(0deg)';
+})
 
 
 
