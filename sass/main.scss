@@ -652,6 +652,13 @@ textarea{
 // popup failed login
 
 .failed-popup{
+    // position: absolute;
+    // top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // animation: showSweetAlert .3s;
+
     .fail-popup{
     background-color: #fff;
     width: 478px;
@@ -667,8 +674,7 @@ textarea{
     // margin-top: -200px;
     overflow: hidden;
     text-align: center;
-    z-index: 2000;
-    animation: showSweetAlert .3s;
+    // z-index: 2000;
         img{
         margin: 15px auto;
         }

@@ -628,4 +628,75 @@ textarea {
 .captcha-popup .cat-popup input[type=submit]:hover {
   filter: brightness(80%);
 }
+
+.failed-popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.failed-popup .fail-popup {
+  background-color: #fff;
+  width: 478px;
+  height: 300px;
+  padding: 17px;
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  text-align: center;
+}
+
+.failed-popup .fail-popup img {
+  margin: 15px auto;
+}
+
+.failed-popup .fail-popup h1 {
+  font-size: 30px;
+  line-height: 33px;
+  font-weight: 500;
+  color: #333333;
+  margin: 10px 10px;
+}
+
+.failed-popup .fail-popup p {
+  color: #777777;
+  font-size: 21px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 29.4px;
+}
+
+.failed-popup .fail-popup .btn-red {
+  background: #d95359;
+  border: 1px solid #d43f3a;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 400;
+  padding: 10px 16px;
+  text-decoration: none;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.failed-popup .fail-popup .btn-red:hover {
+  filter: brightness(80%);
+}
+
+@keyframes showSweetAlert {
+  0% {
+    transform: scale(0.7);
+  }
+  45% {
+    transform: scale(1.05);
+  }
+  80% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /*# sourceMappingURL=main.css.map */
