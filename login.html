@@ -42,7 +42,7 @@
             <!-- back -->
             <div class="flip-card-back log-in">
                 <img src="./img/loginBird.png" alt="A bird flying" class="icon">
-                <h1>Please register</h1>
+                <h1>Registration</h1>
                 <form class="input-field" id="register-with-password">
                     <input type="text" class="input" id="username-r" placeholder="Username"><br>
                     <input type="password" class="input hide" id="password-r" placeholder="password">
@@ -63,13 +63,32 @@
     <div class="captcha-popup hide">
         <div class="cat-popup">
             <h1>One More Step</h1>
-            <img src="./img/loginBird.png" alt="">
+            <div class="img">5*5</div>
+            <!-- <img src="./img/loginBird.png" alt=""> -->
             <form action="">
-                <input type="text" placeholder="enter wriiten in image">
+                <input type="text" placeholder="Enter text Wriiten in image">
                 <input type="submit" value="Ok">
             </form>
         </div>
     </div>
+
+    <div class="failed-popup">
+        <div class="fail-popup hide">
+            <img src="./img/failed.png" alt="">
+            <h1>Authentication error</h1>
+            <p>Invalid Login and password</p>
+            <button class="btn-red">Try Again</button>
+        </div>
+    </div>
+
+    <!-- <div class="success-popup">
+        <div class="success-popup hide">
+            <img src="./img/failed.png" alt="">
+            <h1>Authentication error</h1>
+            <p>Invalid Login and password</p>
+            <button class="btn-red">Try Again</button>
+        </div>
+    </div> -->
     <script src="./login.js"></script>
 </body>
 </html>

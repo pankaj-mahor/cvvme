@@ -30,6 +30,9 @@ usepasswordbtn.addEventListener('click', function(){
     registerpassword.classList.toggle('hide');
     // registerpassword.textContent='dont use ?';
 })
+document.getElementById('register-with-password').addEventListener('click' , function(e){
+    e.preventDefault();
+})
 
 register.addEventListener('click' , function(){
     card.style.transform='rotateY(180deg)';
@@ -44,6 +47,7 @@ backtologin.addEventListener('click', function(){
     show('login1');
     show('login2')
 })
+
 
 function hide(location){
     document.getElementById(location).style.display='none';
