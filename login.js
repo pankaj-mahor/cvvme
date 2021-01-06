@@ -3,7 +3,8 @@ const loginpassword = document.getElementById('login-with-password');
 const text = document.getElementById('text');
 const register = document.getElementById('register');
 const backtologin = document.getElementById('backtologin');
-
+const usepasswordbtn = document.getElementById('usepassword');
+const registerpassword = document.getElementById('password-r');
 const card = document.getElementById('flip-card-inner');
 
 text.addEventListener('click', function(){
@@ -25,17 +26,31 @@ text.addEventListener('click', function(){
     }
 });
 
-
+usepasswordbtn.addEventListener('click', function(){
+    registerpassword.classList.toggle('hide');
+    // registerpassword.textContent='dont use ?';
+})
 
 register.addEventListener('click' , function(){
     card.style.transform='rotateY(180deg)';
+    hide('register');
+    hide('login1');
+    hide('login2');
 })
 
 backtologin.addEventListener('click', function(){
     card.style.transform = 'rotate(0deg)';
+    show('register')
+    show('login1');
+    show('login2')
 })
 
-
+function hide(location){
+    document.getElementById(location).style.display='none';
+}
+function show(location){
+    document.getElementById(location).style.display='block';
+}
 
 
 
