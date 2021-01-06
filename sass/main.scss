@@ -530,10 +530,19 @@ body{
   }
 
 
-  #text,#usepassword{
+//   #text{
+//       font-size: 12px;
+//       padding: 1px 5px;
+//       color: #337Ab7;
+//   }
+  #usepassword,#text{
+      position: fixed;
       font-size: 12px;
+      text-align: center;
+      left: 120px;
       padding: 1px 5px;
       color: #337Ab7;
+      bottom: 55px;
   }
   img{
       margin-top: 40px;

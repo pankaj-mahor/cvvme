@@ -504,10 +504,14 @@ body {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
-.flip-card-inner #text, .flip-card-inner #usepassword {
+.flip-card-inner #usepassword, .flip-card-inner #text {
+  position: fixed;
   font-size: 12px;
+  text-align: center;
+  left: 120px;
   padding: 1px 5px;
   color: #337Ab7;
+  bottom: 55px;
 }
 
 .flip-card-inner img {
