@@ -415,6 +415,6 @@ textarea {
 
 .flip-card-back {
   background-color: #f5f5f5;
-  color: white;
+  color: black;
   transform: rotateY(180deg);
 }
