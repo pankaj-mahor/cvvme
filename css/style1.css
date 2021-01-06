@@ -1,0 +1,43 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 400px;
+    width: 400px;
+    background-color: #fff;
+}
+.form{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.front , .back{
+    border-radius:54px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: red;
+    backface-visibility: hidden;
+}
+.back {
+    background: yellow;
+}
+.front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.front form{
+    display: flex;
+    flex-direction: column;
+}
+
+
