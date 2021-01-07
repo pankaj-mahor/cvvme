@@ -608,21 +608,71 @@ textarea {
 .failed-popup .fail-popup .btn-red:hover {
   filter: brightness(80%);
 }
-@keyframes showSweetAlert {
-  0% {
-    -webkit-transform: scale(0.7);
-    transform: scale(0.7);
-  }
-  45% {
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
-  }
-  80% {
-    -webkit-transform: scale(0.95);
-    transform: scale(0.95);
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
+
+.success {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: red;
+  text-align: center;
+}
+.success .success-popup {
+  z-index: 2000;
+  width: 478px;
+  padding: 17px;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 3px #f5f5f5;
+}
+.success .success-popup img {
+  margin: 10px 0;
+}
+.success .success-popup h1 {
+  color: #333333;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 33px;
+  margin: 10px;
+}
+.success .success-popup .light {
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 29.4px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #777777;
+}
+.success .success-popup textarea {
+  width: 95%;
+  color: #333333;
+  padding: 7px;
+  margin: 10px 0 20px 0;
+}
+.success .success-popup input[type=text] {
+  width: 95%;
+  padding: 8px 12px;
+  margin-bottom: 30px;
+}
+.success .success-popup .small-red {
+  font-size: 11.55px;
+  color: #a94442;
+  font-weight: 300;
+  line-height: 16.17px;
+}
+.success .success-popup .btn-blue {
+  border-radius: 6px;
+  font-weight: 400;
+  line-height: 24px;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #2e6da4;
+  outline: none;
+  padding: 10px 15px;
+  color: white;
+  background-color: #337ab7;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
