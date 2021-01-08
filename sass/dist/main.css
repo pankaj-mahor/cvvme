@@ -97,12 +97,21 @@ body {
   border: 1px solid #dddddd;
 }
 .nav .navbar .account .chat .chatbox .headchat {
+  height: 37px;
   margin: 0;
   color: #3f3e3e;
   background: whitesmoke;
   padding: 10px 20px;
   font-weight: lighter;
   border-bottom: 1px solid #dddddd;
+}
+.nav .navbar .account .chat .chatbox .msg-box {
+  z-index: 777;
+  height: 328px;
+  position: absolute;
+  top: 37px;
+  width: 400px;
+  background: #fff;
 }
 .nav .navbar .account .chat .chatbox .msg-box .message {
   border: 1px solid #dddddd;
@@ -115,6 +124,7 @@ body {
 }
 .nav .navbar .account .chat .chatbox .typemsg {
   width: 100%;
+  height: 35px;
   position: absolute;
   bottom: 0;
   color: #3f3e3e;
@@ -320,29 +330,55 @@ body {
   margin: 0 auto;
 }
 
-.tabs {
+.table-content {
   width: 90%;
   margin: 0 auto;
 }
-.tabs ul {
+.table-content ul {
+  margin: 20px 0;
   list-style: none;
-  display: inline-block;
+  border-bottom: 1px solid #ccc;
+  animation: fadeEffect 1s;
+  /* Go from zero to full opacity */
 }
-.tabs ul li {
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.table-content ul li {
+  border: 1px solid #ccc;
+  border-bottom: none;
   display: inline-block;
-  background: #cecdcd;
-  padding: 8px 15px;
+  padding: 12px 15px;
   cursor: pointer;
+  font-size: 14px;
+  margin-right: -5px;
 }
-.tabs .content .image {
+.table-content ul li:hover {
+  background: #ccc;
+}
+.table-content ul #bitbtn {
+  border-bottom: none;
+}
+.table-content ul #litebtn {
+  border-left: none;
+}
+.table-content .content .image {
   text-align: center;
   margin: 0 auto;
   margin: 50px;
 }
-.tabs .content .image img {
-  width: 400px;
+.table-content .content .image img {
+  width: 300px;
 }
-.tabs .content .btn {
+.table-content .content .image #liteimg {
+  height: 70px;
+}
+.table-content .content .btn {
   display: block;
   width: max-content;
   margin: 0 auto;
@@ -350,15 +386,73 @@ body {
   text-decoration: none;
   background: #1b5baf;
   color: white;
-  padding: 8px 12px;
+  padding: 8px 22px;
 }
-.tabs .content table {
-  width: 100%;
+.table-content .content .btn:hover {
+  filter: brightness(80%);
+}
+.table-content .content table {
+  border-spacing: 0;
   border-collapse: collapse;
+  background-color: transparent;
+  width: 100%;
+  margin-bottom: 20px;
+  max-width: 100%;
+  border: 1px solid #ddd;
+  margin-top: 30px;
+  font-size: 13px;
 }
-.tabs .content th {
-  border: 1px solid;
+.table-content .content table thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+.table-content .content table tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+  height: 24px;
+}
+.table-content .content table tr .id {
+  width: 50px;
+}
+.table-content .content table tr .status {
+  width: 350px;
+}
+.table-content .content table tr .ruser {
+  width: 107px;
+}
+.table-content .content table tr .rusd {
+  width: 61px;
+}
+.table-content .content table tr .rcur {
+  width: 59px;
+}
+.table-content .content table tr .rate {
+  width: 173px;
+}
+.table-content .content table tr .fee {
+  width: 51px;
+}
+.table-content .content table tr .cdate {
+  width: 141px;
+}
+.table-content .content table tr .pdate {
+  width: 167px;
+}
+.table-content .content table tr .action {
+  width: 72px;
+}
+.table-content .content table td {
+  border: 1px solid #ddd;
+}
+.table-content .content th {
+  border: 1px solid #dddddd;
   text-align: left;
+  padding: 2px;
+  color: #333333;
+  font-weight: 700;
+  line-height: 18.57px;
 }
 
 .login-box {
@@ -675,4 +769,94 @@ textarea {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+table {
+  width: 85%;
+  margin: 0 auto;
+  display: table;
+  text-indent: initial;
+  border-color: grey;
+  margin-top: 20px;
+}
+table thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+table thead tr th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #ddd;
+  text-align: left;
+}
+table thead tr th .btn-group-xs > .btn, table thead tr th .btn-xs {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+table thead tr th .btn-success {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+table thead tr th .btn {
+  display: inline-block;
+  padding: 2px 5px;
+  margin-bottom: 0;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+table thead tr th button {
+  overflow: visible;
+}
+table tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+table th {
+  display: table-cell;
+  vertical-align: inherit;
+  font-weight: bold;
+  text-align: -internal-center;
+}
+table td, table th {
+  padding: 0;
+}
+
+.table {
+  width: 85%;
+  max-width: 85%;
+  margin-bottom: 20px;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.table-cards {
+  font-size: 13px;
+}
+
+.table > caption + thead > tr:first-child > td, .table > caption + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > th, .table > thead:first-child > tr:first-child > td, .table > thead:first-child > tr:first-child > th {
+  border-top: 0;
+}
+
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+
+.table-cards td, .table-cards th {
+  padding: 2px !important;
 }

@@ -16,4 +16,5 @@ litebtn.addEventListener('click', function(){
     bitcoin.classList.add('hide');
     litecoin.classList.remove('hide');
     litecoin.classList.add('show');
+    // litecoin.style.border = 'none';
 })
