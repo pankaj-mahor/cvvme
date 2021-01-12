@@ -11,28 +11,28 @@ const settingpopup = document.getElementById('setting-popup');
 const settingbtn = document.getElementById('setting');
 const closebtn = document.getElementById('close');
 
-settingbtn.addEventListener('click' , function(){
-    settingpopup.classList.remove('hide');
-    settingpopup.classList.add('show');
+// payment popup
+const closebtcbtn = document.getElementById('btcClose');
+const btcpopup = document.getElementById('payment-popup');
+const paybtc = document.getElementById('paybtc');
+
+paybtc.addEventListener('click',function(){
+    btcpopup.classList.remove('hide');
 })
 
-closebtn.addEventListener('click', function(){
-    settingpopup.classList.remove('show');
-    settingpopup.classList.add('hide');
+closebtcbtn.addEventListener('click' , function(){
+    btcpopup.classList.add('hide');
 })
 
-chaticon.addEventListener('click', function(e){
-    console.log(e.target)
-    // chatbox.classList.remove('hide');
-    dropbox.classList.remove('show');
-    dropbox.classList.add('hide');
-    chatbox.classList.toggle('show');
-    // chatbox.classList.add('show');
-});
+// payment popup ltc
+const closeltcbtn = document.getElementById('ltcClose');
+const ltcpopup = document.getElementById('payment-popup-ltc');
+const payltc = document.getElementById('payltc');
 
-dropselect.addEventListener("click" ,function(e){
-    console.log(e.target);
-    chatbox.classList.remove('show')
-    dropbox.classList.toggle('show');
-    chatbox.classList.add('hide');
-});
+payltc.addEventListener('click',function(){
+    ltcpopup.classList.remove('hide');
+})
+
+closeltcbtn.addEventListener('click' , function(){
+    ltcpopup.classList.add('hide');
+})

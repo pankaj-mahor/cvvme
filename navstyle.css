@@ -127,16 +127,10 @@ i{
     margin-right: 5px;
 }
 .nav .navbar .account .chat .chatbox .msg-box{
-    /* z-index: 777;
-    height: 328px;
-    width: 100%;
-    background: #fff;
-    position: absolute;
-    top: 37px;
-    width: 400px;
-    height: 350px;
-    width: 100%; */
     /* position: absolute; */
+    width: 100%;
+    margin: 0;
+    background: #fff;
     height: 328px;
     top: 28px;
 }
@@ -290,10 +284,11 @@ i{
 
 /* Setting - popup */
 .setting-popup{
+    overflow: hidden !important;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
+    width:100vw;
     opacity: 9;
     height: 100vh;
     /* width: 100vw; */
@@ -302,10 +297,11 @@ i{
     align-items: center;
     margin: 0 auto;
     background: rgba(221, 221, 221, .65);
+    overflow: hidden;
     /* display: none; */
 }
 .setting-popup .popup{
-    /* display: flex; */
+    box-sizing: border-box;
     /* justify-content: center; */
     /* align-items: center; */
     position: absolute;

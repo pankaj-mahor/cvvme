@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.chatbox{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 26px;
+    /* z-index: ; */
+    right: 15vw;
+    width: 400px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    margin: 0 auto;
+}
+.headchat{
+    width: 100%;
+    background: rgb(247, 247, 247);
+    padding:  8px 14px;
+    border-bottom: 1px solid rgb(235,235,235);
+}
+.headchat h4{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+    /* margin-left: 5px; */
+
+}
+.headchat h4 i{
+    margin-right: 5px;
+}
+.msg-box{
+    height: 350px;
+    width: 100%;
+    /* position: absolute; */
+    top: 28px;
+}
+.msg-box .msg{
+    width: 95%;
+    margin: 2px auto;
+    padding: 5px 3px;
+    border-bottom: 2px solid #ccc;
+    border-bottom-style: dotted;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    align-items: center;
+    background: #fff;
+    overflow-y: scroll;
+}
+.msg-box .msg .msg-details{
+    flex-basis: 89%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+.msg-box .msg .msg-details .userAndTym{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    padding-bottom: none;
+}
+.msg-box .msg .msg-details .actualmsg{
+    font-size: 13px;
+    padding-left: 2px;
+    align-items: center;
+    padding-bottom:10px ;
+}
+.msg-box .msg .msg-details .userAndTym p{
+    font-size: 12px;
+}
+.msg-box .msg .msg-details .userAndTym h5{
+    font-size: 14px;
+}
+.msg-box .msg .icon{
+    flex-basis: 9%;
+}
+.typemsg form{
+    display: flex;
+    flex-basis: 100%;
+    padding: 10px 15px;
+    background: rgb(247,247,247);
+}
+.typemsg form input{
+    flex-basis: 95%;
+    border: 1px solid #ccc;
+    border-right: none;
+    padding: 5px 10px;
+}
+.typemsg form button{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    /* border: 1px solid #5BCODE; */
+    flex-basis: 5%;
+    background: #5BC0DE;
+    padding: 5px 10px;
+    color:white;
+}

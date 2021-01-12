@@ -14,278 +14,7 @@ body{
     // width: 90%;
     // margin: 0 auto;
 }
-// Navbar Styling
-.nav{
-    width: 100%;
-    background: #F8F8F8;
-    border: 1px solid #cecdcd;
-    min-height: 40px !important;
-    height: 40px;
-    .navbar{
-        // width: 1138px;
-        width: 85%;
-        margin: 0 auto;
-        height: 40px;
-        color: #777;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 5px;
-        margin-bottom: 20px;
-        flex-basis: 100%;
-        .head{
-            display: flex;
-            align-items: center;
-            color: #8b8b8b;
-            h1{
-                font-size: 18px;
-                margin: 0 0 0 -15px;
-                line-height: 20px;
-                font-weight: normal;
-                padding: 12px 15px;
-                a{
-                    color: #777;
-                }
-            }
-            ul{ 
-                display: flex;
-                list-style: none;
-                margin-right: 20px;
-                li{
-                    // margin-right: 20px;
-                    i{
-                        margin-right: 5px;
-                        font-size: 100%;
-                        color: #8b8b8b;
-                    }
-                    a{
-                        font-size: 14px;
-                        // letter-spacing:1px;
-                        line-height: 20px;
-                        padding: 10px 15px;
-                        color: #777;
-                        &:hover{
-                                color: #000;
-                            
-                        }
-                    }
-                }
-            }
-            
-            
-        }
-        a{
-            text-decoration: none;
-            // color: #555;
-        }
-        
-        .account{
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-            p,div{
-                font-size: 14px;
-                margin: 0 12px;
-                i{
-                    font-size: 100%;
-                }
 
-            }
-            .chat{
-                margin: 0 15px;
-                i{
-                    font-size: 80%;
-                }
-                position: relative;
-                i{
-                    font-size: 80%;
-                }
-                .chatbox{
-                    // background: #fff;
-                    width: 400px;
-                    height: 400px;
-                    position: absolute;
-                    top: 28px;
-                    // z-index: 1;
-                    left: -200px;
-                    margin: 0 auto;
-                    border:1px solid rgb(221, 221, 221);
-                    // box-shadow: 0 2px 2px rgb(221, 221, 221);
-                    .headchat{
-                        height: 37px;
-                        margin: 0;
-                        color: rgb(63, 62, 62);
-                        background: rgb(245, 245, 245);
-                        padding:10px 20px;
-                        font-weight: lighter;
-                        border-bottom: 1px solid rgb(221, 221, 221);
-                    }
-                    .msg-box{
-                        z-index: 777;
-                        height: 328px;
-                        // width: 100%;
-                        position: absolute;
-                        top: 37px;
-                        width: 400px;
-                        background: #fff;
-                        .message{
-                            border: 1px solid rgb(221,221,221);
-                            border-radius: 5px;
-                            background: rgb(221,221,221);
-                            color: black;
-                            width: max-content;
-                            margin-top: 10px;
-                            // overflow: scroll;
-                            padding: 5px;
-                        }
-                    }
-                    .typemsg{
-                        // display: block;
-                        width: 100%;
-                        height: 35px;
-                        position: absolute;
-                        bottom: 0;
-                        color: rgb(63, 62, 62);
-                        background: rgb(245, 245, 245);
-                        font-weight: lighter;
-                        border-bottom: 1px solid rgb(221, 221, 221);
-                        margin: 0;
-                        form{
-                            display: flex;
-                            flex-basis: 100%;
-                            justify-content: space-between;
-                              input{
-                                padding: 8px 15px;
-                                flex-basis: 90%;
-                            }
-                            button{
-                                text-align: center;
-                                flex-basis: 10%;
-                                padding: 8px 15px;
-                            }
-                        }
-                    }
-
-                }
-
-            }
-            .username{
-                margin-left:5px;
-            }
-            #currency{
-                background-color: #777;
-                font-weight: bold;
-                width: max-content;
-                font-size: 11px;
-                color: white;
-                border: 1px solid #555;
-                border-radius: 5px;
-                padding:2px 10px;
-                margin:0 5px;
-            }
-            .dropdown{
-                position: relative;
-                display: flex;
-                align-items: center;
-                
-                .dropdown-box{
-                    background: white;
-                    cursor: auto;
-                    width: 250px;
-                    height: 150px;
-                    position: absolute;
-                    top: 25px;
-                    right: 0px;
-                    border: 1px solid rgb(221, 221, 221);
-                box-shadow: 0 2px 2px rgb(221, 221, 221);
-                    .usericon{
-                        display: flex;
-                        align-items: center;
-                        margin-top: 10px;
-                        img{
-                            height: 40px;
-                        }
-                        p{
-                            font-size: 24px;
-                            color: black;
-                            font-weight: normal;
-                        }
-                    }
-                    .mail-details{
-                        p{
-                            padding-bottom: 5px;
-                        }
-                        margin: 13px 0;
-                        // padding: 5px;
-                    }
-                    .setting{
-                        position: relative;
-                        bottom: 0;
-                        margin: 0;
-                        display: flex;
-                        flex-basis: 100%;
-                        button{
-                            font-size: 14px;
-                            flex-basis: 50%;
-                            padding: 3px 15px;
-                            background: rgb(245,245,245);
-                            border: 1px solid rgb(221, 221, 221);
-                            outline: none;
-                            // border: none;
-                            // border-left: 1px solid grey;
-                            cursor: pointer;
-                            &:hover{
-                                background: rgb(221,221,221);
-                            }
-                        }
-                    }
-                }
-            }
-        
-        }
-    }
-}
-
-
-// popup setting click
-.setting-popup{
-    height: 100vh;
-    // width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    margin: 0 auto;
-    background: rgba(221,221,221,.75);
-    .popup{
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        width: 500px;
-        height: 400px;
-        border: 1px solid rgb(221, 221, 221);
-        box-shadow: 0 2px 2px rgb(197, 195, 195);
-        background: #fff;
-        border-radius: 20px;
-        margin: 0 auto;
-        .popup-head{
-            font-weight: 300;
-            letter-spacing: 1px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 15px 20px;
-            border-bottom: 1px solid rgb(221, 221, 221);
-            span{
-                cursor: pointer;
-            }
-        }
-    }  
-}
 // News Section
 .news{
     width: 85%;
@@ -326,7 +55,6 @@ body{
         }
     }
 }
-
 
 // Error Thing
 .error{
@@ -372,146 +100,6 @@ body{
     width: 90%;
     margin: 0 auto;
 }
-// Billing 
-.table-content{
-    width: 90%;
-    margin:0 auto;
-    ul{
-        margin: 20px 0;
-        list-style: none;
-        border-bottom: 1px solid #ccc;
-        // display: inline-block;
-        animation: fadeEffect 1s;
-
-        /* Go from zero to full opacity */
-        @keyframes fadeEffect {
-        from {opacity: 0;}
-        to {opacity: 1;}
-        }
-        li{
-            border: 1px solid #ccc;
-            border-bottom: none;
-            display: inline-block;
-            // background: #cecdcd;
-            padding: 12px 15px;
-            cursor: pointer;
-            font-size: 14px;
-            margin-right: -5px;
-            // background: rgb(156, 110, 110);
-            &:hover{
-                background: #ccc;
-            }
-        }
-        
-        #bitbtn{
-            border-bottom: none;
-            
-        }
-        #litebtn{
-            // border-top:none;
-            // border-right: none;
-            border-left: none;
-        }
-
-    }
-    .content{
-        .image{
-            text-align: center;
-            margin: 0 auto;
-            margin: 50px;
-            img{
-                width: 300px;
-
-            }
-            #liteimg{
-                height: 70px;
-            }
-
-        }
-        
-        .btn{
-            display: block;
-            width:max-content;
-            margin: 0 auto;
-            margin-top: 20px;
-            text-decoration: none;
-            background: rgb(27, 91, 175);
-            color: white;
-            padding: 8px 22px;
-            &:hover{
-                filter: brightness(80%);
-            }
-        }
-        table {
-            border-spacing: 0;
-            border-collapse: collapse;
-            background-color: transparent;
-            width: 100%;
-            margin-bottom: 20px;
-            max-width: 100%;
-            border: 1px solid #ddd;
-            margin-top: 30px;
-            font-size: 13px;
-            thead {
-                display: table-header-group;
-                vertical-align: middle;
-                border-color: inherit;
-            }
-            tr {
-                display: table-row;
-                vertical-align: inherit;
-                border-color: inherit;
-                height: 24px;
-                .id{
-                    width: 50px;
-                }
-                .status{
-                    width: 350px;
-                }
-                .ruser{
-                    width: 107px;
-                }
-                .rusd{
-                    width: 61px;
-                }
-                .rcur{
-                    width: 59px;
-                }
-                .rate{
-                    width: 173px;
-                }
-                .fee{
-                    width: 51px;
-                }
-                .cdate{
-                    width: 141px;
-                }
-                .pdate{
-                    width: 167px;
-                }
-                .action{
-                    width:72px;
-                }
-
-            }
-            td{
-                border: 1px solid #ddd;
-            }
-            
-        }
-        th{
-            border: 1px solid rgb(221, 221, 221);
-            text-align: left;
-            padding: 2px;
-            color: rgb(51, 51, 51);
-            font-weight: 700;
-            line-height: 18.57px;
-            
-
-        }
-        
-    }
-}
 
 // Login-page Front
 // 3d flip
@@ -533,7 +121,7 @@ body{
 .show{
     display: block;
 }
-
+// card flip code w3
 .flip-card-inner {
   position: relative;
   width: 400px;
@@ -596,13 +184,6 @@ body{
         box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
         }
   }
-
-
-//   #text{
-//       font-size: 12px;
-//       padding: 1px 5px;
-//       color: #337Ab7;
-//   }
   #usepassword,#text{
       position: fixed;
       font-size: 12px;
@@ -659,7 +240,7 @@ textarea{
   color: black;
   transform: rotateY(180deg);
 }
-
+            // FLip-card over//
 // popup login captcha 
 .captcha-popup{
     // z-index: 999;
@@ -799,7 +380,7 @@ textarea{
     }
 
 }
-
+//login key success popup
 .success{
     position: absolute;
     top: 50%;
@@ -877,7 +458,7 @@ textarea{
 
 
 // Order page
-table{
+.table{
     width: 85%;
     margin: 0 auto;
     display: table;
@@ -963,4 +544,5 @@ table{
 .table-cards td, .table-cards th {
     padding: 2px!important;
 }
+//order page over
 

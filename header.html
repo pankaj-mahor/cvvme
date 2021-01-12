@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sass/main.css">
+    <!-- <link rel="stylesheet" href="sass/main.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="navstyle.css">
 
     <title>CvvMe</title>
 </head>
@@ -33,23 +33,35 @@
 
             <div class="account">
                 <div class="chat">
-                    <i id="chat" class="fa fa-comment"></i>
-                    <div class="chatbox hide" id="chatbox">
-                        <div class="headchat">
-                            <h4><i></i>Talk with support</h4>
-                        </div>
-                        <div class="msg-box">
-                            <p id="message" class="message">hi there how are you?</p>
-                        </div>
-                        <div class="typemsg">
-                            <form action="">
-                                <input type="text" placeholder="type a message" id="msg" class="msg">
+                    <i id="chat" class="fa fa-comment">
+                        <div class="chatbox" id="chatbox">
+                            <div class="headchat">
+                                <h4><i class="fa fa-comments"></i>Talk with support</h4>
+                            </div>
+                            <div class="msg-box">
+                                <div class="msg">
+                                    <div class="msg-details">
+                                        <div class="userAndTym">
+                                            <p><i class="fa fa-clock"></i>4 days ago</p>
+                                            <h5>Username&64</h5>
+                                        </div>
+                                        <p class="actualmsg">Hey How are You Doing...</p>
+                                    </div>
+                                    <div class="icon"><img src="./img/chaticon.png" alt=""></div>
+                                </div>
 
-                                <button type="submit" >Send
-                                </button>
-                            </form>
+                            </div>
+                            <div class="typemsg">
+                                <form action="">
+                                    <input type="text" placeholder="type a message" id="msg" class="msg">
+
+                                    <button type="submit"><i class="fab fa-telegram-plane"></i>
+                                    </button>
+                                </form>
+                            </div>
                         </div>
-                    </div>
+                    </i>
+                   <!-- chatbox -->
                 </div>
                 <p class="faq"><i class="fa fa-question-circle"></i></p>
                 <div class="dropdown" id="drop-select"><i class="fa fa-user"></i>
@@ -75,26 +87,100 @@
             </div>
         </div>
     </div>
+
+
+
     <div class="setting-popup hide" id="setting-popup">
         <div class="popup">
             <div class="popup-head">
-                <p>Setting</p>
-                <span id="close"><i class="fa fa-times"></i></span>
+                <div class="closemodal">
+                    <p>Setting</p>
+                    <span id="close"><i class="fa fa-times"></i></span>
+                </div>
+                <div class="tabs-all">
+                    <div class="tab">
+                        <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Contact infromation</button>
+                        <button class="tablinks" onclick="openCity(event, 'Paris')">Password</button>
+                        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Login Key</button>
+                    </div>
+
+                    <div id="London" class="tabcontent">
+                        <form action="" class="contacted">
+                            <div class="half-field">
+                                <div class="one-half">
+                                    <h4>Your Email</h4>
+                                    <input type="text" class="input-s" placeholder="Your Email">
+                                </div>
+                                <div class="second-half">
+                                    <h4>Your Jabber</h4>
+                                    <input type="text" class="input-s" placeholder="Your jabber">
+                                </div>
+                            </div>
+                            <div class="submitbtn">
+                                <input type="submit" class="save" value="Save">
+                            </div>
+                        </form>
+                    </div>
+
+                    <div id="Paris" class="tabcontent">
+                        <form action="" class="passchange">
+                            <div class="fullfield">
+                                <h4>Enter Current Password</h4>
+                                <input type="pass" class="input-s-f" placeholder="Enter Current Password">
+                            </div>
+                            <div class="half-field">
+                                <div class="one-half">
+                                    <h4>Enter new Password\</h4>
+                                    <input type="pass" class="input-s" placeholder="Enter New Password">
+                                </div>
+                                <div class="second-half">
+                                    <h4>Retype New Password</h4>
+                                    <input type="pass" class="input-s" placeholder="retype Pasword">
+                                </div>
+                            </div>
+                            <p class="small">After changing Password , old login will not work.</p>
+                            <div class="submitbtn">
+                                <input type="submit" class="chnagepass" value="Change Password">
+                            </div>
+                        </form>
+                    </div>
+
+                    <div id="Tokyo" class="tabcontent">
+                        <!-- <form action="" class="generate">
+                            <div class="generatekey">
+                                <h4>To generate login key , enter current password</h4>
+                                <input type="text" class="input-s" placeholder="Enter Password">
+
+                            </div>
+                            <div class="submitbtn">
+                                <input type="text" class="generate-login-key" value="Generate Login key">
+                            </div>
+                        </form> -->
+                        
+                        <form action="" class="passchange" >
+                            <div class="fullfield" style="width: 80%; margin: 0 auto;">
+                                <h4>To Generate Login Key, enter current Password</h4>
+                                <input type="pass" class="input-s-f" placeholder="Enter Current Password">
+                            </div>
+                            <div class="submitbtn">
+                                <input type="submit" class="chnagepass" value="Change Password">
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!-- dropdown    -->
-    <!-- <div class="dropdown-account">
-        <div class="user-detail">
-            <img src="" alt="">
-            <p>Username</p>
-        </div>
-        <div class="details">
-            <p>Email: <br><span>N.a</span></p>
-            <p>Jabber: <br> <span>N/a</span></p>
-        </div>
-    </div> -->
-    <script src="./script.js"></script>
+
+
+
+
+
+
+
+    <script src="./nav.js"></script>
+    <script src="./tab.js"></script>
+
 </body>
 
 </html>

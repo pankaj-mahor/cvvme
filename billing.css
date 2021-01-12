@@ -1,0 +1,281 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial , sans-serif;
+}
+.table-content{
+    width: 90%;
+    margin: 0 auto;
+}
+.table-content ul{
+    margin: 10px 0;
+    list-style: none;
+    border-bottom: 1px solid #ccc;
+    /* display: inline-block; */
+    animation: fadeEffect 1s;
+
+}
+.tab-bitcoin{
+    box-sizing: border-box;
+    margin-top: 20px;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}
+.tablinks-bit{
+    background: #fff;
+
+}
+.tab-bitcoin button{
+    /* float: left; */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 12px;
+    /* transition: 0.3s; */
+    font-size: 17px;
+}
+.tab-bitcoin button:hover {
+    background-color: #ccc;
+}
+.tab-bitcoin button{
+    background-color: #fff;
+    border-top: .5px solid #ccc;
+    border-right: .5px solid #ccc;
+    border-left: .5px solid #ccc;
+    border-bottom: none;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+#litebtn{
+    border-left: none;
+    margin-left: -5px;
+}
+.style{
+    background-color: #fff;
+    border-top: .5px solid #ccc;
+    border-right: .5px solid #ccc;
+    border-left: .5px solid #ccc;
+    border-bottom: none;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.content .image{
+    text-align: center;
+    margin: 0 auto;
+    margin: 50px;
+}
+.content .image img{
+    width: 300px;
+}
+.content .image #liteimg{
+    height: 65px;
+}
+.content .btn{
+    display: block;
+    width:max-content;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-decoration: none;
+    background: rgb(27, 91, 175);
+    color: white;
+    padding: 8px 22px;
+}
+.content .btn:hover{
+    filter: brightness(80%);
+}
+.content table{
+    border-spacing: 0;
+    border-collapse: collapse;
+    background-color: transparent;
+    width: 100%;
+    margin-bottom: 20px;
+    max-width: 100%;
+    border: 1px solid #ddd;
+    margin-top: 30px;
+    font-size: 13px;
+}
+.content table thead{
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.content table thead tr{
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+    height: 24px;
+
+    /* border-bottom: 1px solid #ccc; */
+}
+/* .content table tbody tr{
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+} */
+/* .content table tbody tr{
+    margin-bottom: 10px;
+} */
+.content table tbody tr td{
+    font-size: 12px;
+    border: 1px solid #ccc;
+    padding: 1.5px;
+}
+.content table tbody tr.danger{
+    background-color: #f2dede;
+}
+.content table tbody tr.pending {
+    background-color: #D9EDF7;
+}
+.content table tbody .danger td.expired{
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #d9534f;
+    text-align: center;
+    /* margin-left: 5px; */
+    color: white;
+}
+.content table tbody .pending td.pend {
+    background-color: #337ab7;
+    color: white;
+    text-align: center;
+    /* padding: 1px !important; */
+    /* border: 1px solid rgb(205, 236, 28); */
+    /* background-color: rgba(255, 255, 0, 0.822); */
+    box-shadow: 0 2px 2px rgba(204, 204, 204, 0.822);
+}
+.content table tbody tr td button{
+    font-size: 14px;
+    border: 1px solid #ccc;
+    padding: 2.2px;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+}
+.content table tbody tr td.pay{
+    text-align: center;
+    padding: 2px;
+}
+.content table tbody tr td button:hover {
+    filter: brightness(80%);
+}
+.content table thead td{
+    border: 1px solid #ddd;
+}
+.content table th{
+    border: 1px solid rgb(221, 221, 221);
+    text-align: left;
+    padding: 2px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+    line-height: 18.57px;
+}
+.danger , 
+.pending{
+    padding: 10px;
+}
+.id {
+    width: 50px;
+}
+
+.status {
+    width: 350px;
+}
+
+.ruser {
+    width: 107px;
+}
+
+.rusd {
+    width: 61px;
+}
+
+.rcur {
+    width: 59px;
+}
+
+.rate {
+    width: 173px;
+}
+
+.fee {
+    width: 51px;
+}
+
+.cdate {
+    width: 141px;
+}
+
+.pdate {
+    width: 167px;
+}
+
+.action {
+    width: max-content;
+    text-align: center;
+}
+
+
+.payment-popup{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(255,255,255);
+
+}
+.payment-popup .pay-popup{
+    width: 600px;
+    height: 350px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.payment-popup .pay-popup .forclose{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+    border-bottom: 1px solid #ccc;
+}
+.payment-popup .pay-popup .bitcoin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+}
+#btcClose,#ltcClose{
+    cursor: pointer;
+    color: red;
+}
+button.not-available{
+    cursor: no-drop;
+}
+.payment-popup .pay-popup .bitcoin p{
+    padding: 10px 0;
+}
+.payment-popup .pay-popup .bitcoin a{
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-decoration: underline;
+}
+.small{
+    margin: 5px 0;
+    font-size: 13px;
+}
+
+
+
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
