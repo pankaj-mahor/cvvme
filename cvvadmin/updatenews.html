@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="./navstyle.css">
+    <!-- <link rel="stylesheet" href="/sass/main.css"> -->
+    <!-- <link rel="stylesheet" href="./billing.css"> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="navbar container">
+            <div class="head">
+                <h1 class="heading">
+                    <a href="#">CVV.ME</a>
+                </h1>
+
+            </div>
+            <div class="account">
+                <ul>
+                    <li><a href="news.html"><i class="fa fa-rss"></i>News</a></li>
+                    <li><a href="billing.html"><i class="fa fa-money-bill-alt"></i>Billing</a></li>
+                    <li><a href="useract.html"><i class="fa fa-credit-card"></i>User Activity</a></li>
+                    <li><a href="alluser.html"><i class="fa fa-credit-card"></i>All Users</a></li>
+                    <!-- <li><a href="extra.html"><i class="fa fa-list-alt"></i>Extra</a></li> -->
+                </ul>
+                <div class="dropdown" id="drop-select"><i class="fa fa-user"></i>
+                    <span class="username">
+                        UserNamehui7346
+                    </span>
+                    <span id="currency">$0.0</span><i class="fa fa-caret-down"></i>
+                    <div class="dropdown-box hide" id="drop-box">
+                        <div class="usericon">
+                            <img src="./img/usericon.png" alt="An user icon">
+                            <p>username</p>
+                        </div>
+                        <div class="mail-details">
+                            <p>Email: </p>
+                            <p>Jabber :</p>
+                        </div>
+                        <div class="setting">
+                            <button><i class="fa fa-sign-out-alt"></i> Logout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="news-section sidebar">
+        <div class="news-option sidebar-menu">
+            <ul>
+                <li><a href="news.html"><i></i>News Upload</a></li>
+                <li><a href="updatenews.html"><i></i>Update Post</a></li>
+                <!-- <li><a href="deletepost.html"><i></i>Delete Post</a></li> -->
+            </ul>
+        </div>
+
+        <div class="update-field sidebar-2">
+            <h1>Update Post </h1>
+            <div class="search">
+                <div class="search">
+                    <input type="search" placeholder="Search ">
+                    <input type="submit" name="" id="" value="Search">
+                </div>
+                <div class="delete-all">
+                    <a href="#" id="delete-all-btn">Delete All</a>
+                    <div class="popup-deleteAll hide" id="popup-deleteAll">
+                        <h1>Are You Sure You Want to Delete All Your Post?</h1>
+                        <p class="small">
+                            Check Again if you chosen mistakenly
+                        </p>
+                        <div class="buttons">
+                            <button class="confirm" onclick="alert('sure?')">Delete All</button>
+                            <button class="cancel" id="cancel">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div><hr>
+            <table>
+                <thead>
+                    <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>1</td>
+                    <td>Bitcon REmove</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing e...</td>
+                    <td><a href="update.html">Update</a></td>
+                    <td><a href="delete.html">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Bitcon rem</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing e...</td>
+                        <td><a href="update.html">Update</a></td>
+                        <td><a href="delete.html">Delete</a></td>
+                    </tr><tr>
+                        <td>3</td>
+                        <td>Bitcon </td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing e...</td>
+                        <td><a href="update.html">Update</a></td>
+                        <td><a href="delete.html">Delete</a></td>
+                    </tr><tr>
+                        <td>4</td>
+                        <td>Bitcon ove</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing e...</td>
+                        <td><a href="update.html">Update</a></td>
+                        <td><a href="delete.html">Delete</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    
+    <script>
+        const deletAllBtn = document.getElementById('delete-all-btn');
+        const deleteAllPopup = document.getElementById('popup-deleteAll');
+        const cancelbtn = document.getElementById('cancel');
+
+        deletAllBtn.addEventListener('click', function () {
+            deleteAllPopup.classList.remove('hide');
+        })
+
+        cancelbtn.addEventListener('click', function () {
+            deleteAllPopup.classList.add('hide');
+        })
+    </script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/24.0.0/classic/ckeditor.js"></script>
+    <script src="./nav.js"></script>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#editor'))
+            .catch(error => {
+                console.error(error);
+            });
+        CKEDITOR.replace('content');
+    </script>
+    <!-- <script src="./tab.js"></script> -->
+</body>
+
+</html>

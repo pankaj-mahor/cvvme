@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="./navstyle.css">
+    <!-- <link rel="stylesheet" href="/sass/main.css"> -->
+    <!-- <link rel="stylesheet" href="./billing.css"> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="navbar container">
+            <div class="head">
+                <h1 class="heading">
+                    <a href="#">CVV.ME</a>
+                </h1>
+
+            </div>
+            <div class="account">
+                <ul>
+                    <li><a href="news.html"><i class="fa fa-rss"></i>News</a></li>
+                    <li><a href="billing.html"><i class="fa fa-money-bill-alt"></i>Billing</a></li>
+                    <li><a href="useract.html"><i class="fa fa-credit-card"></i>User Activity</a></li>
+                    <li><a href="alluser.html"><i class="fa fa-credit-card"></i>All Users</a></li>
+                    <!-- <li><a href="extra.html"><i class="fa fa-list-alt"></i>Extra</a></li> -->
+                </ul>
+                <div class="dropdown" id="drop-select"><i class="fa fa-user"></i>
+                    <span class="username">
+                        UserNamehui7346
+                    </span>
+                    <span id="currency">$0.0</span><i class="fa fa-caret-down"></i>
+                    <div class="dropdown-box hide" id="drop-box">
+                        <div class="usericon">
+                            <img src="./img/usericon.png" alt="An user icon">
+                            <p>username</p>
+                        </div>
+                        <div class="mail-details">
+                            <p>Email: </p>
+                            <p>Jabber :</p>
+                        </div>
+                        <div class="setting">
+                            <button><i class="fa fa-sign-out-alt"></i> Logout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="news-section sidebar">
+        <div class="news-option sidebar-menu">
+            <ul>
+                <li><a href="news.html"><i></i>News Upload</a></li>
+                <li><a href="updatenews.html"><i></i>Update Post</a></li>
+                <li><a href=""><i></i>Delete Post</a></li>
+            </ul>
+        </div>
+
+        <div class="news-field sidebar-2">
+            <h1>Upload Post </h1>
+            <form>
+                <div class="title">
+                    <p>What's Heading</p>
+                    <input type="text" name="head" class="input-head" placeholder="Upload heading">
+                </div>
+                <div class="description" id="editor">
+                    <textarea name="content"> write here </textarea>
+                </div>
+                <div class="submitbtn">
+                    <input type="submit" value="Upload">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    
+
+    <script src="https://cdn.ckeditor.com/ckeditor5/24.0.0/classic/ckeditor.js"></script>
+    <script src="./nav.js"></script>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#editor'))
+            .catch(error => {
+                console.error(error);
+            });
+        CKEDITOR.replace('content');
+    </script>
+    <!-- <script src="./tab.js"></script> -->
+</body>
+
+</html>

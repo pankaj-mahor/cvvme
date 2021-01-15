@@ -1,0 +1,324 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background: red; */
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    /* width: 90%; */
+    /* margin: 0 auto; */
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+
+.nav{
+    width: 100%;
+    background: #F8F8F8;
+    border: 1px solid #cecdcd;
+    min-height: 40px !important;
+    height: 40px;
+}
+.nav .navbar{
+    /* width: 1138px; */
+    width: 85%;
+    margin: 0 auto;
+    height: 40px;
+    color: #777;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 20px;
+    flex-basis: 100%;
+}
+.nav .navbar .head{
+    display: flex;
+    align-items: center;
+    color: #8b8b8b;
+}
+.nav .navbar .head h1{
+    font-size: 18px;
+    margin: 0 0 0 -15px;
+    line-height: 20px;
+    font-weight: normal;
+    padding: 12px 15px;
+}
+a{
+    text-decoration: none;
+}
+.nav .navbar .head a{
+    color: #777;
+}
+.nav .navbar .account ul{
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+}
+.nav .navbar .account ul li i{
+    margin-right: 5px;
+    font-size: 100%;
+    color: #8b8b8b;
+}
+.nav .navbar .account ul li a{
+    font-size: 14px;
+    /* letter-spacing:1px; */
+    line-height: 20px;
+    padding: 10px 15px;
+    color: #777;
+}
+.nav .navbar .account ul li a:hover{
+    color: #000;
+}
+/* Account */
+.nav .navbar .account{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+i{
+    font-size: 100%;
+}
+.nav .navbar .account p,
+.nav .navbar .account div{
+    font-size: 14px;
+    margin: 0 12px;
+}
+
+.username {
+    margin-left: 5px;
+}
+
+#currency {
+    background-color: #777;
+    font-weight: bold;
+    width: max-content;
+    font-size: 11px;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 2px 10px;
+    margin: 0 5px;
+}
+.nav .navbar .account .dropdown{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.nav .navbar .account .dropdown .dropdown-box{
+    background: white;
+    cursor: auto;
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    top: 25px;
+    right: -20px;
+    border: 1px solid rgb(221, 221, 221);
+    box-shadow: 0 2px 2px rgb(221, 221, 221);
+}
+.nav .navbar .account .dropdown .dropdown-box .usericon{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.nav .navbar .account .dropdown .dropdown-box .usericon img{
+    height: 40px;
+}
+.nav .navbar .account .dropdown .dropdown-box .usericon p{
+    font-size: 24px;
+    color: black;
+    font-weight: normal;
+}
+.nav .navbar .account .dropdown .dropdown-box .mail-details{
+    margin: 13px 0;
+}
+.nav .navbar .account .dropdown .dropdown-box .mail-details p{
+    padding-bottom: 5px;
+}
+.nav .navbar .account .dropdown .dropdown-box .setting{
+    position: relative;
+    bottom: 0;
+    margin: 0;
+    display: flex;
+    flex-basis: 100%;
+}
+.nav .navbar .account .dropdown .dropdown-box .setting button{
+    font-size: 14px;
+    flex-basis: 100%;
+    padding: 3px 15px;
+    background: rgb(245, 245, 245);
+    border: 1px solid rgb(221, 221, 221);
+    outline: none;
+    /* border: none; */
+    /* border-left: 1px solid grey; */
+    cursor: pointer;
+}
+.nav .navbar .account .dropdown .dropdown-box .setting button:hover{
+    background: rgb(221,221,221);
+}
+.sidebar{
+    display: flex;
+    padding: 10px;
+    width: 85%;
+    margin: 20px auto;
+    flex-basis: 100%;
+    justify-content: space-between;
+}
+.sidebar-menu{
+    height: 85vh;
+    flex-basis: 15%;
+    border-right: 1px solid #ccc;
+    background: rgba(233, 232, 232, 0.185);
+}
+.sidebar-menu ul{
+    list-style: none;
+    text-align: center;
+    padding: 5px;
+    margin: 10px 0;
+}
+.sidebar-menu ul li{
+    margin-bottom: 10px;
+    background: rgba(201, 200, 200, 0.411);
+    padding: 5px;
+}
+.sidebar-menu ul li:hover{
+    filter: brightness(80%);
+}
+/* NEWs  */
+/* .news-section .news-option{
+    height: 85vh;
+    flex-basis: 15%;
+    border-right: 1px solid #ccc;
+    background: rgba(233, 232, 232, 0.185);
+} */
+.news-section .news-option ul{
+    list-style: none;
+    /* text-align: center;
+    padding: 5px;
+    margin: 10px 0; */
+}
+/* .news-section .news-option ul li{
+    margin-bottom: 10px;
+    background: rgba(201, 200, 200, 0.411);
+    padding: 5px;
+} */
+/* .news-section .news-option ul li:hover{
+    filter: brightness(80%);
+} */
+.news-section .news-option ul li a{
+    color: #555;
+    width: 100%;
+}
+.news-section .news-field{
+    flex-basis: 60%;
+    /* width: 50%; */
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+.news-section .news-field h1{
+    color: #555;
+    margin: 10px;
+    font-size: 28px;
+}
+.news-section .news-field form input[type=text]{
+    width: 90%;
+    text-align: left;
+    margin: 20px;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.news-section .news-field form input[type=submit] {
+    width: max-content;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    box-shadow: 0 2px 2px #ccc;
+    margin: 20px;
+}
+/* UPdate post News */
+
+.news-section .update-field{
+    flex-basis: 80%;
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+.news-section .update-field table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.news-section .update-field input[type=search],
+.news-section .update-field input[type=submit] {
+    margin-left: 2px;
+    padding: 4px 12px;
+}
+.news-section .update-field input[type=submit]{
+    cursor: pointer;
+}
+.news-section .update-field th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.news-section  .sidebar-2 a{
+    text-decoration: underline;
+}
+.search{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+/* .delete-all{
+    position: relative;
+} */
+.popup-deleteAll{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height: 200px;
+    background: rgb(240, 236, 236);
+    box-shadow: 0 4px 4px #ccc;
+    border-radius: 5px;
+}
+.popup-deleteAll h1{
+    font-size: 25px;
+    margin: 10px 0;
+    padding: 10px;
+}
+.popup-deleteAll .small{
+    color: red;
+    margin: 10px 0;
+}
+.popup-deleteAll button{
+    padding: 8px 12px;
+    margin: 20px 5px;
+    cursor: pointer;
+}
+.popup-deleteAll button:hover {
+    filter: brightness(80%);
+}
+
+.popup-deleteAll button.confirm{
+    background: red;
+    border: 1px solid red;
+    color: white;
+    box-shadow: 0 2px 2px #ccc;
+}
+.popup-deleteAll button.cancel{
+
+}
