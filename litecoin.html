@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="navstyle.css">
+    <link rel="stylesheet" href="sass/main.css">
+    <link rel="stylesheet" href="./billing.css">
+    <!-- <link rel="stylesheet" href="bootstrap-4.0.0/dist/css/bootstrap.css"> -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+    <title>CvvMe</title>
+</head>
+
+<body>
+     <div class="nav">
+         <div class="navbar container">
+             <div class="head">
+                 <h1 class="heading">
+                     <a href="#">CVV.ME</a>
+                 </h1>
+                 <ul>
+                     <li><a href=""><i class="fa fa-rss"></i>News</a></li>
+                     <li><a href=""><i class="fa fa-money-bill-alt"></i>Billing</a></li>
+                     <li><a href=""><i class="fa fa-credit-card"></i>CVV</a></li>
+                     <li><a href=""><i class="fa fa-credit-card"></i>No CVV</a></li>
+                     <li><a href=""><i class="fa fa-list-alt"></i>SSN</a></li>
+                     <li><a href=""><i class="fa fa-credit-card"></i>Dumps</a></li>
+                     <li><a href=""><i class="fa fa-shopping-cart"></i>Cart</a></li>
+                     <li><a href=""><i class="fa fa-arrow-circle-down"></i>Orders</a></li>
+                 </ul>
+             </div>
+
+             <div class="account">
+                 <div class="chat">
+                     <i id="chat" class="fa fa-comment">
+                     </i>
+                     <div class="chatbox hide" id="chatbox">
+                         <div class="headchat">
+                             <h4><i class="fa fa-comments"></i>Talk with support</h4>
+                         </div>
+                         <div class="msg-box">
+                             <div class="msg">
+                                 <div class="msg-details">
+                                     <div class="userAndTym">
+                                         <p><i class="fa fa-clock"></i>4 days ago</p>
+                                         <h5>Username&64</h5>
+                                     </div>
+                                     <p class="actualmsg">Hey How are You Doing...</p>
+                                 </div>
+                                 <div class="icon"><img src="./img/chaticon.png" alt=""></div>
+                             </div>
+                         </div>
+                         <div class="typemsg">
+                             <form>
+                                 <input type="text" placeholder="type a message" id="msgtype" class="msgtype">
+
+                                 <button type="submit"><i class="fab fa-telegram-plane"></i>
+                                 </button>
+                             </form>
+                         </div>
+                     </div>
+                     <!-- chatbox -->
+                 </div>
+                 <p class="faq"><i class="fa fa-question-circle"></i></p>
+                 <div class="dropdown" id="drop-select"><i class="fa fa-user"></i>
+                     <span class="username">
+                         UserNamehui7346
+                     </span>
+                     <span id="currency">$0.0</span><i class="fa fa-caret-down"></i>
+                     <div class="dropdown-box hide" id="drop-box">
+                         <div class="usericon">
+                             <img src="./img/usericon.png" alt="An user icon">
+                             <p>username</p>
+                         </div>
+                         <div class="mail-details">
+                             <p>Email: </p>
+                             <p>Jabber :</p>
+                         </div>
+                         <div class="setting">
+                             <button id="setting"><i class="fa fa-cogs"></i> Setting</button>
+                             <button><i class="fa fa-sign-out-alt"></i> Logout</button>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+     <div class="setting-popup hide" id="setting-popup">
+         <div class="popup">
+             <div class="popup-head">
+                 <div class="closemodal">
+                     <p>Setting</p>
+                     <span id="close"><i class="fa fa-times"></i></span>
+                 </div>
+                 <div class="tabs-all">
+                     <div class="tab">
+                         <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Contact
+                             infromation</button>
+                         <button class="tablinks" onclick="openCity(event, 'Paris')">Password</button>
+                         <button class="tablinks" onclick="openCity(event, 'Tokyo')">Login Key</button>
+                     </div>
+
+                     <div id="London" class="tabcontent">
+                         <form action="" class="contacted" id="form1">
+                             <div class="half-field">
+                                 <div class="one-half">
+                                     <h4>Your Email</h4>
+                                     <input type="text" class="input-s" placeholder="Your Email">
+                                 </div>
+                                 <div class="second-half">
+                                     <h4>Your Jabber</h4>
+                                     <input type="text" class="input-s" placeholder="Your jabber">
+                                 </div>
+                             </div>
+                             <div class="submitbtn">
+                                 <input type="submit" class="save" value="Save">
+                             </div>
+                         </form>
+                     </div>
+
+                     <div id="Paris" class="tabcontent">
+                         <form action="" class="passchange" id="form2">
+                             <div class="fullfield">
+                                 <h4>Enter Current Password</h4>
+                                 <input type="pass" class="input-s-f" placeholder="Enter Current Password">
+                             </div>
+                             <div class="half-field">
+                                 <div class="one-half">
+                                     <h4>Enter new Password\</h4>
+                                     <input type="pass" class="input-s" placeholder="Enter New Password">
+                                 </div>
+                                 <div class="second-half">
+                                     <h4>Retype New Password</h4>
+                                     <input type="pass" class="input-s" placeholder="retype Pasword">
+                                 </div>
+                             </div>
+                             <p class="small">After changing Password , old login will not work.</p>
+                             <div class="submitbtn">
+                                 <input type="submit" class="chnagepass" value="Change Password">
+                             </div>
+                         </form>
+                     </div>
+
+                     <div id="Tokyo" class="tabcontent">
+                         <!-- <form action="" class="generate">
+                            <div class="generatekey">
+                                <h4>To generate login key , enter current password</h4>
+                                <input type="text" class="input-s" placeholder="Enter Password">
+
+                            </div>
+                            <div class="submitbtn">
+                                <input type="text" class="generate-login-key" value="Generate Login key">
+                            </div>
+                        </form> -->
+
+                         <form action="" class="passchange" id="form3">
+                             <div class="fullfield" style="width: 80%; margin: 0 auto;">
+                                 <h4>To Generate Login Key, enter current Password</h4>
+                                 <input type="pass" class="input-s-f" placeholder="Enter Current Password">
+                             </div>
+                             <div class="submitbtn">
+                                 <input type="submit" class="chnagepass" value="Change Password">
+                             </div>
+                         </form>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+
+    <!-- bitcoin system -->
+    <!-- bitcoin litecoin tabs -->
+    <div class="table-content">
+        <div class="tab-bitcoin">
+            <a href="bitcoin.html" class="tablinks-bit trigger " id="bitbtn">Bitcoin</a>
+            <a href="" class="tablinks-bit trigger" id="litebtn">Litecoin</a>
+        </div>
+        <div class="content" id="litecoin">
+            <div class="image">
+                <img src="./img/litecoin.png" alt="A Litecoin image Showing Litcoin icon and name" id="liteimg">
+                <a href="#" class="btn" id="payment-create">Make Payment</a>
+            </div>
+
+            <div class="payment-popup" id="payment-popup-ltc">
+                <div class="pay-popup">
+                    <div class="forclose">
+                        <p>PAY</p>
+                        <p id="ltcClose"><i class="fa fa-times"></i></p>
+                    </div>
+                    <div class="bitcoin">
+                        <form class="form-inline">
+                            <div class="input-group mb-1 mr-sm-1">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">USD</div>
+                                </div>
+                                <input type="text" class="form-control" id="inlineFormInputGroupUsername2"
+                                    placeholder="Username">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">+ 5.0%</div>
+                                </div>
+                            </div>
+                            <span>=</span>
+                            <div class="input-group mb-1 mr-sm-1">
+                                <input type="text" class="form-control" id="inlineFormInputGroupUsername2"
+                                    placeholder="Username">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">BTC</div>
+                                </div>
+                            </div>
+
+                        </form>
+                        <p>Please send Litecoin to this address</p>
+                        <a href="#" class="bitcoin-address">3KLh49LPEPTxQmPPwvbdPCAiMg7AeEzNW5</a>
+                        <img src="./img/qr.jpg" class="btcQr" alt="">
+                        <p class="small">You can send any amount of LTC. After confirming payment, LTC will be converted
+                            to USD</p>
+                    </div>
+                </div>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th class="id" >ID</th>
+                        <th class="status">Status</th>
+                        <th class="ruser">Credited</th>
+                        <th class="rusd">USD</th>
+                        <th class="rcur">BTC</th>
+                        <th class="rate">Exchange rate</th>
+                        <th class="fee">Fee</th>
+                        <th class="cdate">Create date</th>
+                        <th class="pdate">Payment date</th>
+                        <th class="action"></th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr class="pending">
+                        <td>12978</td>
+                        <td class="pend"><span>Payment pending(28Min)</span></td>
+                        <td>$0.00</td>
+                        <td>$0.00</td>
+                        <td>0.000000</td>
+                        <td></td>
+                        <td>5.0%</td>
+                        <td>sat ,jan 2,2021 9:29Am</td>
+                        <td></td>
+                        <td class="pay"><button id="payltc"><i class="fa fa-check"></i> Pay</button></td>
+                    </tr>
+
+                    <tr class="danger">
+                        <td>12978</td>
+                        <td class="expired" aria-disabled="true"><span>Payment Expired(30Min)</span></td>
+                        <td>$0.00</td>
+                        <td>$0.00</td>
+                        <td>0.000000</td>
+                        <td></td>
+                        <td>5.0%</td>
+                        <td>sat ,jan 2,2021 9:29Am</td>
+                        <td></td>
+                        <td class="pay"> <button disabled><i class="fa fa-check"></i> Pay</button></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- <script src="./tabs.js"></script> -->
+    <script src="./nav.js"></script>
+    <script src="./tab.js"></script>
+    <script>
+        // litecoin
+        const closeltcbtn = document.getElementById('ltcClose');
+        const ltcpopup = document.getElementById('payment-popup-ltc');
+        const payltc = document.getElementById('payltc');
+
+        payltc.addEventListener('click',function(){
+        ltcpopup.classList.remove('hide');
+        })
+
+        closeltcbtn.addEventListener('click' , function(){
+        ltcpopup.classList.add('hide');
+        })
+    </script>
+</body>
+
+</html>

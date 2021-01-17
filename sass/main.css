@@ -275,10 +275,18 @@ textarea {
   font-size: 35px;
   display: grid;
   place-content: center;
-  background-image: url(../img/loginBird.png);
-  opacity: .2;
+  background-image: url(../img/captcha.png);
+  background-position: top center;
+  opacity: .7;
 }
-
+.captcha-popup .cat-popup .img span{
+  color: #ccc;
+  font-size: 40px;
+  transform: rotate(-20deg);
+  text-shadow: 2.5px 2px 0 black,
+  5px 4px 0 black;
+  user-select: none;
+}
 .captcha-popup .cat-popup form {
   align-items: center;
   display: flex;
@@ -370,22 +378,33 @@ textarea {
 }
 
 .success {
+  width: 99vw;
+  height: 100vh;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: red;
+  top: 0;
+  left:0;
+  /* transform: translate(-50%, -50%); */
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.075);
   text-align: center;
 }
 
 .success .success-popup {
+  position: relative;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   z-index: 2000;
   width: 478px;
   padding: 17px;
   border-radius: 5px;
   background-color: white;
   border: 1px solid #ccc;
-  box-shadow: 0 2px 3px #f5f5f5;
+  box-shadow: 0 2px 3px #ccc;
 }
 
 .success .success-popup img {
@@ -542,3 +561,15 @@ textarea {
   padding: 2px !important;
 }
 /*# sourceMappingURL=main.css.map */
+
+input[type=text]:focus,
+input[type=email]:focus ,
+input[type=password]:focus ,
+input[type=submit]:focus ,
+textarea:focus{
+  border: 1px solid #ccc;
+  outline: 1px solid #ccc;
+}
+
+
+/* JUST LITECOIN POPUP FORM BOOTSTRAP STYLING */

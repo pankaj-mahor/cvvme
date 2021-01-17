@@ -5,6 +5,7 @@
 }
 body{
     font-family: Arial , sans-serif;
+    /* background: red; */
 }
 .table-content{
     width: 90%;
@@ -20,35 +21,31 @@ body{
 }
 .tab-bitcoin{
     box-sizing: border-box;
-    margin-top: 20px;
-    width: 100%;
+    /* margin-top: 20px; */
+    width: 95%;
+    margin: 25px auto;
     overflow: hidden;
     border-bottom: 1px solid #ccc;
 }
-.tablinks-bit{
-    background: #fff;
 
-}
-.tab-bitcoin button{
-    /* float: left; */
-    border: none;
+.tab-bitcoin a{
+    display: inline-block;
+    /* margin: 10px 0px !important; */
     outline: none;
     cursor: pointer;
-    padding: 10px 12px;
-    /* transition: 0.3s; */
-    font-size: 17px;
-}
-.tab-bitcoin button:hover {
-    background-color: #ccc;
-}
-.tab-bitcoin button{
-    background-color: #fff;
-    border-top: .5px solid #ccc;
-    border-right: .5px solid #ccc;
-    border-left: .5px solid #ccc;
+    background: #fff;
+    font-size: 15px;
+    padding: 12px !important;
+    text-decoration: none;
+    color: #555;
+    border: 1px solid #ccc;
     border-bottom: none;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+}
+/* .tab-bitcoin a:visited{
+    background: rgba(204, 204, 204, 0.904);
+} */
+.tab-bitcoin a:hover {
+    background: #ccc;
 }
 #litebtn{
     border-left: none;
@@ -107,7 +104,7 @@ body{
     display: table-row;
     vertical-align: inherit;
     border-color: inherit;
-    height: 24px;
+    /* height: 24px; */
 
     /* border-bottom: 1px solid #ccc; */
 }
@@ -119,9 +116,9 @@ body{
     margin-bottom: 10px;
 } */
 .content table tbody tr td{
-    font-size: 12px;
+    font-size: 11px;
     border: 1px solid #ccc;
-    padding: 1.5px;
+    padding: .5px !important;
 }
 .content table tbody tr.danger{
     background-color: #f2dede;
@@ -132,7 +129,9 @@ body{
 .content table tbody .danger td.expired{
     box-sizing: border-box;
     border-radius: 5px;
-    background-color: #d9534f;
+    /* font-size: 11px; */
+    box-shadow: 0 2px 2px #ccc;
+    background-color: #d9544fb6;
     text-align: center;
     /* margin-left: 5px; */
     color: white;
@@ -140,6 +139,7 @@ body{
 .content table tbody .pending td.pend {
     background-color: #337ab7;
     color: white;
+    border-radius: 5px;
     text-align: center;
     /* padding: 1px !important; */
     /* border: 1px solid rgb(205, 236, 28); */
@@ -227,8 +227,8 @@ body{
 
 }
 .payment-popup .pay-popup{
-    width: 600px;
-    height: 350px;
+    width: 650px;
+    /* height: 350px; */
     border: 1px solid #ccc;
     border-radius: 10px;
     display: flex;
@@ -254,8 +254,12 @@ body{
 button.not-available{
     cursor: no-drop;
 }
+.payment-popup .pay-popup .bitcoin img{
+    height: 170px;
+    width: 170px;
+}
 .payment-popup .pay-popup .bitcoin p{
-    padding: 10px 0;
+    padding: 5px 0;
 }
 .payment-popup .pay-popup .bitcoin a{
     margin-bottom: 20px;
@@ -263,8 +267,268 @@ button.not-available{
     text-decoration: underline;
 }
 .small{
-    margin: 5px 0;
-    font-size: 13px;
+    margin: 3px 0;
+    font-size: 12px;
+}
+
+/* bootstap */
+input {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+input {
+    overflow: visible;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+
+/*  */
+.form-inline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.form-inline .form-check {
+    width: 100%;
+}
+
+@media (min-width: 576px) {
+    .form-inline label {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+
+    .form-inline .form-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .form-inline .form-control {
+        display: inline-block;
+        width: auto;
+        vertical-align: middle;
+    }
+
+    .form-inline .form-control-plaintext {
+        display: inline-block;
+    }
+
+    .form-inline .input-group {
+        width: auto;
+    }
+
+    .form-inline .form-check {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: auto;
+        padding-left: 0;
+    }
+
+    .form-inline .form-check-input {
+        position: relative;
+        margin-top: 0;
+        margin-right: 0.25rem;
+        margin-left: 0;
+    }
+
+    .form-inline .custom-control {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .form-inline .custom-control-label {
+        margin-bottom: 0;
+    }
+}
+
+.form-inline span {
+    margin: 0 7px;
+}
+
+.input-group {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+
+.input-group:first-child {
+    flex-basis: 50%;
+}
+
+.input-group:last-child {
+    flex-basis: 40%;
+}
+
+.input-group>.form-control:not(:last-child),
+.input-group>.custom-select:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.input-group>.form-control:not(:first-child),
+.input-group>.custom-select:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.input-group>.custom-file {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.input-group-prepend,
+.input-group-append {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.input-group-prepend .btn,
+.input-group-append .btn {
+    position: relative;
+    z-index: 2;
+}
+
+.input-group-prepend .btn+.btn,
+.input-group-prepend .btn+.input-group-text,
+.input-group-prepend .input-group-text+.input-group-text,
+.input-group-prepend .input-group-text+.btn,
+.input-group-append .btn+.btn,
+.input-group-append .btn+.input-group-text,
+.input-group-append .input-group-text+.input-group-text,
+.input-group-append .input-group-text+.btn {
+    margin-left: -1px;
+}
+
+.input-group-prepend {
+    margin-right: -1px;
+}
+
+.input-group-append {
+    margin-left: -1px;
+}
+
+.input-group-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0.275rem 0.55rem;
+    margin-bottom: 0;
+    font-size: .8rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+
+.input-group>.input-group-prepend>.btn,
+.input-group>.input-group-prepend>.input-group-text,
+.input-group>.input-group-append:not(:last-child)>.btn,
+.input-group>.input-group-append:not(:last-child)>.input-group-text,
+.input-group>.input-group-append:last-child>.btn:not(:last-child):not(.dropdown-toggle),
+.input-group>.input-group-append:last-child>.input-group-text:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.input-group>.input-group-append>.btn,
+.input-group>.input-group-append>.input-group-text,
+.input-group>.input-group-prepend:not(:first-child)>.btn,
+.input-group>.input-group-prepend:not(:first-child)>.input-group-text,
+.input-group>.input-group-prepend:first-child>.btn:not(:first-child),
+.input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.mb-1,
+.my-1 {
+    margin-bottom: 0.25rem !important;
+}
+
+
+.mb-2,
+.my-2 {
+    margin-bottom: 0.5rem !important;
 }
 
 

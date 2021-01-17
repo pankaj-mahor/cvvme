@@ -133,6 +133,8 @@ i{
     background: #fff;
     height: 328px;
     top: 28px;
+    /* overflow-x: hidden; */
+    overflow-y: scroll;
 }
 .nav .navbar .account .chat .chatbox .msg-box .msg{
     width: 100%;

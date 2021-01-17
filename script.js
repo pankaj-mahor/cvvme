@@ -11,28 +11,28 @@ const settingpopup = document.getElementById('setting-popup');
 const settingbtn = document.getElementById('setting');
 const closebtn = document.getElementById('close');
 
-// payment popup
-const closebtcbtn = document.getElementById('btcClose');
-const btcpopup = document.getElementById('payment-popup');
-const paybtc = document.getElementById('paybtc');
+// // payment popup
+// const closebtcbtn = document.getElementById('btcClose');
+// const btcpopup = document.getElementById('payment-popup');
+// const paybtc = document.getElementById('paybtc');
 
-paybtc.addEventListener('click',function(){
-    btcpopup.classList.remove('hide');
-})
+// paybtc.addEventListener('click',function(){
+//     btcpopup.classList.remove('hide');
+// })
 
-closebtcbtn.addEventListener('click' , function(){
-    btcpopup.classList.add('hide');
-})
+// closebtcbtn.addEventListener('click' , function(){
+//     btcpopup.classList.add('hide');
+// })
 
-// payment popup ltc
-const closeltcbtn = document.getElementById('ltcClose');
-const ltcpopup = document.getElementById('payment-popup-ltc');
-const payltc = document.getElementById('payltc');
+// // payment popup ltc
+// const closeltcbtn = document.getElementById('ltcClose');
+// const ltcpopup = document.getElementById('payment-popup-ltc');
+// const payltc = document.getElementById('payltc');
 
-payltc.addEventListener('click',function(){
-    ltcpopup.classList.remove('hide');
-})
+// payltc.addEventListener('click',function(){
+//     ltcpopup.classList.remove('hide');
+// })
 
-closeltcbtn.addEventListener('click' , function(){
-    ltcpopup.classList.add('hide');
-})
+// closeltcbtn.addEventListener('click' , function(){
+//     ltcpopup.classList.add('hide');
+// })
