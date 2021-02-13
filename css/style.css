@@ -1,5 +1,652 @@
-body {
-  background: #000;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/*# sourceMappingURL=style.css.map */
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+::selection {
+    background: #3498DB;
+    color: #fff;
+}
+
+body {
+    line-height: 1.4;
+    overflow-x: hidden;
+    /* background: #222; */
+    /* background: #333;
+    color: #fff; */
+    /* background-image: url("../bg.jpg"); */
+}
+
+.hide {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    /* background: #222; */
+    /* padding: 0 2rem; */
+    /* background: red; */
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../ezgif.com-gif-maker.gif    );
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    height: 64px;
+}
+
+
+.logo img {
+    /* width: 5000px; */
+    width: 250px;
+    /* height: 100px; */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 0.5rem;
+
+    /* padding: 5px; */
+}
+
+nav ul li a {
+    font-size: 0.95rem;
+    color: #3498DB;
+    padding: 5px;
+    transition: color .3s linear;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #3498DB;
+    filter: brightness(80%);
+}
+
+.bars {
+    color: #3498DB;
+    display: none;
+}
+
+/* HOME PAGE LANDING PAGE */
+#home {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 100%;
+}
+
+.text1 {
+    flex-basis: 65%;
+    /* text-align: center; */
+    padding-left: 2rem;
+}
+
+.text1 h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #3498DB;
+    margin: 1rem;
+}
+
+.img1 {
+    flex-basis: 30%;
+}
+
+.text1 p {
+    font-size: 1.2rem;
+    color: #ddd;
+    margin: 1rem;
+}
+
+.btn {
+    margin: 0 auto;
+    width: max-content;
+    text-align: center;
+    /* font-size: 2rem; */
+    color: #fff;
+    background: #3498DB;
+    margin: 1rem;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    filter: brightness(80%);
+}
+
+.img1 .img {
+    width: 450px;
+}
+
+
+
+
+
+
+
+
+/* Extra */
+.extra {
+    text-align: center;
+    background: #111;
+    background: linear-gradient(to bottom, #1B1B1D 50%, #191919 50%);
+}
+
+.extra p {
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    width: auto;
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+    background: #3498DB;
+    color: #fff;
+}
+
+
+
+
+
+/* Feature Page  */
+.features {
+
+    /* margin: 2rem 0; */
+    background: #191919;
+    padding: 2.5rem 0;
+    /* background: #222; */
+    color: #fff;
+
+}
+
+.features h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #3498DB;
+}
+
+.features h1 span {
+    border-bottom: 2px solid #3498DB;
+}
+
+.features .info {
+    text-align: center;
+    margin: .9rem 0;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.all-feature {
+    display: flex;
+    justify-content: center;
+    /* background: red; */
+    /* flex-wrap: wrap; */
+}
+
+.feature {
+    text-align: center;
+    margin: 1rem .5rem;
+    background: #222;
+    border: 1px solid #444;
+    width: 280px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 4px 1px rgba(var(--jb7, 0, 0, 0), .0975);
+
+}
+
+.feature h2 {
+    font-size: 1.3rem;
+    margin: .7rem 0;
+}
+
+.feature p {
+    color: #ddd;
+    letter-spacing: .5px;
+}
+
+.feature img {
+    color: #3498DB;
+}
+
+/* Why Invest In Bitcoin */
+.why-invest {
+    /* background: #1a252f !important; */
+    padding: 2rem 0;
+    background: #222;
+    color: #fff;
+    /* background: linear-gradient(5deg, #222, #3498DB); */
+
+}
+
+.why-invest .feature {
+    /* border: 1px solid #283d52; */
+    background: #333 !important;
+}
+
+.why-invest h1 {
+    text-align: center;
+    font-size: 2.9rem;
+    color: #3498DB;
+    margin: 5px;
+}
+
+.why-invest h2 {
+    color: #fff;
+}
+
+.why-invest h1 span {
+    padding-top: 15px;
+    border-bottom: 2px solid #3498DB;
+}
+
+.why-invest p {
+    color: #ddd;
+}
+
+.why-invest .info {
+    text-align: center;
+    margin: .9rem 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+
+}
+
+/* OUR STORY SECTION */
+
+.story {
+    margin: 0 auto;
+    padding: 1.5rem 0;
+    /* background: #222; */
+    background: #191919;
+    color: #eee;
+}
+
+.story-box {
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stories {
+    display: flex;
+    /* flex-direction: column; */
+    flex-basis: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stories .left p span {
+    font-weight: 700;
+    color: #3498DB;
+}
+
+.left {
+    flex-basis: 60%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.right {
+    flex-basis: 40%;
+}
+
+.story-box h1 {
+    color: #3498DB;
+    font-size: 3rem;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.story-box h1 span {
+    padding: 5px;
+    border-bottom: 2px solid #3498DB;
+}
+
+.left p {
+    margin: 1rem;
+}
+
+.left a {
+    margin: 0 auto;
+    display: inline-block;
+    background: #3498DB;
+    color: #fff;
+    padding: 5px 8px;
+    /* margin-left: 15px; */
+}
+
+.left a:hover {
+    filter: brightness(80%);
+}
+
+.left p:last-of-type {
+    color: #eee;
+    /* word-break: break-all;
+     */
+    text-align: justify;
+}
+
+
+.stories .right img {
+    width: 400px;
+}
+
+/* Footer  */
+
+footer {
+    width: 100%;
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    margin: 0;
+}
+
+.inline {
+    background: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.center img {
+    width: 150px;
+}
+
+.center ul {
+    list-style: none;
+    display: flex;
+}
+
+.center ul li {
+    margin: .5rem 1rem;
+}
+
+.center ul li a {
+    color: #3498DB;
+    font-size: 1.2rem;
+}
+
+#backtotop {
+    border: 1px solid #3498DB;
+    padding: 15px 18px;
+    background: #3498D8;
+    color: #fff;
+    border-radius: 50%;
+}
+
+#backtotop:hover,
+.center ul li a {
+    filter: brightness(90%);
+}
+
+/* Responsive Model */
+
+/* HOME PAGE LANDING PAGE */
+
+@media screen and (max-width:345px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #nav.expand .menu {
+        display: block;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        background: #222;
+        color: #3498DB;
+        width: 100% !important;
+        text-align: center;
+        z-index: 2;
+    }
+
+    #nav.expand .menu li {
+        margin: .6rem 0;
+        width: 100%;
+    }
+
+    .feature {
+        width: 98%;
+        margin: 0 auto;
+    }
+
+    .img1 img {
+        width: 300px;
+    }
+
+    .right imh {
+        width: 300px;
+    }
+
+}
+
+@media screen and (max-width:786px) {
+    header {
+        background-size: cover;
+        background-image: url(../ezgif.com-gif-maker.gif);
+        /* background-color: rgb(22, 22, 24); */
+        background-color: #000;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .bars {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    #nav.expand .menu {
+        display: block;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        background: #222;
+        color: #3498DB;
+        width: 100% !important;
+        text-align: center;
+        z-index: 2;
+        /* transition: all .3s linear; */
+        /* border: 1px solid red/; */
+    }
+
+    #nav.expand .menu li {
+        margin: .6rem 0;
+    }
+
+
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .first {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        align-items: center;
+        width: 100%;
+        padding: .5rem;
+        margin-top: .5rem;
+        flex-direction: 100%;
+        /* background: red; */
+    }
+
+    .btn {
+        padding: 6px 10px;
+    }
+
+    .text1 {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text1 h1 {
+        text-align: center;
+        font-size: 1.7rem;
+        margin: .7rem;
+    }
+
+    .text1 p {
+        font-size: 1.3rem;
+    }
+
+
+    .img1 .img {
+        margin-top: 1.3rem;
+        width: 300px;
+    }
+
+    /* Feature */
+    .features {
+        margin: 0;
+    }
+
+    .all-feature {
+        flex-direction: column;
+    }
+
+    .features h1 {
+        font-size: 2.5rem;
+    }
+
+    .feature {
+        text-align: center;
+        margin: 1rem auto;
+        /* background: #fff; */
+        width: 95%;
+    }
+
+    /* WHY INVEST */
+    .why-invest {
+        margin: 0;
+        padding: 1.5rem 0;
+    }
+
+    .why-invest h1 {
+        text-align: center;
+        font-size: 2rem;
+        color: #3498DB;
+    }
+
+    /* Story Page  */
+    .story {
+        margin: 0 auto;
+        padding: 1.5rem 0;
+        /* background: red; */
+    }
+
+    .stories {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right .img {
+        width: 300px;
+    }
+
+
+    /* 'Footer */
+    footer {
+        margin-top: 0;
+        padding: 1.5rem 0;
+    }
+
+    .inline {
+        flex-direction: column;
+        position: relative;
+    }
+
+    #backtotop {
+        position: absolute;
+        bottom: 0;
+        right: 5%;
+    }
+}
+
+
+@media screen and (min-width: 1900px) {
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #home {
+        display: flex;
+    }
+
+    .menu li a {
+        font-size: 1.3rem;
+    }
+
+    .text1 h1 {
+        font-size: 3rem;
+    }
+
+    .text1 p {
+        font-size: 1.5rem;
+    }
+
+    .img1 img {
+        width: 700px;
+    }
+}
